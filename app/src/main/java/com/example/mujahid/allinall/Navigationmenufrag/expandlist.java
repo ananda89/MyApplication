@@ -9,11 +9,10 @@ import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
 import com.example.mujahid.allinall.CustomAdapters.CustomExpandListAdapter;
-import com.example.mujahid.allinall.Pogo.GameData;
+import com.example.mujahid.allinall.Pojo.GameData;
 import com.example.mujahid.allinall.R;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 

@@ -1,4 +1,4 @@
-package com.example.mujahid.allinall.Pogo;
+package com.example.mujahid.allinall.Pojo;
 
 /**
  * Created by Mujahid on 11/26/2017.

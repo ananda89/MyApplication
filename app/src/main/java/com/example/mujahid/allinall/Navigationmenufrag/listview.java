@@ -8,15 +8,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.mujahid.allinall.CustomAdapters.CustomListAdapter;
-import com.example.mujahid.allinall.Pogo.ProgrammingLangData;
+import com.example.mujahid.allinall.Pojo.ProgrammingLangData;
 import com.example.mujahid.allinall.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**

@@ -1,5 +1,6 @@
-package com.example.mujahid.allinall;
+package com.example.mujahid.allinall.Activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.annotation.NonNull;
@@ -11,7 +12,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
 import com.example.mujahid.allinall.Navigationmenufrag.AsynTask;
@@ -31,7 +31,7 @@ import com.example.mujahid.allinall.Navigationmenufrag.service;
 import com.example.mujahid.allinall.Navigationmenufrag.sharedperfermence;
 import com.example.mujahid.allinall.Navigationmenufrag.sqlite;
 import com.example.mujahid.allinall.Navigationmenufrag.unitTest;
-import com.example.mujahid.allinall.Navigationmenufrag.viewpager;
+import com.example.mujahid.allinall.R;
 
 public class MainActivity extends AppCompatActivity {
        private DrawerLayout drawer;
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
- fragment = null;
+fragment = null;
               switch (item.getItemId()){
                 case R.id.Thread:
                   fragment = new Thread();
@@ -124,13 +124,19 @@ public class MainActivity extends AppCompatActivity {
                       fragment = new unitTest();
                       break;
                   case R.id.Viewpager:
-                      fragment = new viewpager();
+                      // fragment = new viewpager();
+                Intent intent = new Intent(MainActivity.this, ViewPager.class);
+                      startActivity(intent);
+                    break;
 
 
               }
+              if(fragment!=null){
+                  setTitle(item.getTitle());
+                  FragTransction(); 
+              }
                 item.setChecked(true);
-                setTitle(item.getTitle());
-                FragTransction();
+
                 drawer.closeDrawers();
                return true;
             }

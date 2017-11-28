@@ -1,8 +1,6 @@
 package com.example.mujahid.allinall.CustomAdapters;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,11 +10,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.mujahid.allinall.Pogo.ProgrammingLangData;
+import com.example.mujahid.allinall.Pojo.ProgrammingLangData;
 import com.example.mujahid.allinall.R;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
 
 /**
  * Created by Mujahid on 11/26/2017.

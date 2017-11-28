@@ -8,10 +8,9 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.mujahid.allinall.Pogo.GameData;
+import com.example.mujahid.allinall.Pojo.GameData;
 import com.example.mujahid.allinall.R;
 
-import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -22,6 +21,7 @@ public class CustomExpandListAdapter extends BaseExpandableListAdapter {
     private List<String> header;
     private Context ctx;
     private List<GameData> list;
+
     public CustomExpandListAdapter(Context c, List<GameData> data){
         this.ctx = c;
         list = data;

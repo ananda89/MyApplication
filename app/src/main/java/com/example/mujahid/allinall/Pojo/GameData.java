@@ -1,7 +1,4 @@
-package com.example.mujahid.allinall.Pogo;
-
-import java.util.HashMap;
-import java.util.List;
+package com.example.mujahid.allinall.Pojo;
 
 /**
  * Created by Mujahid on 11/28/2017.
