@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mujahid.allinall.MainActivity">
+
+
+    <item android:id="@+id/Ui" android:title="UI Design">
+        <menu>
+            <item android:id="@+id/Viewpager" android:title="View Pager" android:icon="@drawable/ic_multitab"> </item>
+        <item android:id="@+id/ListView" android:title="List View" android:icon="@drawable/ic_listview"> </item>
+        <item android:id="@+id/ExLIst" android:title="Expandable List" android:icon="@drawable/ic_expandlist"> </item>
+        <item android:id="@+id/Recycle" android:title="Recycle View" android:icon="@drawable/ic_recycle"> </item>
+        </menu>
+    </item>
+
+<item android:id="@+id/Thread" android:title="Basic Thread" android:icon="@drawable/ic_thread"> </item>
+    <item android:id="@+id/AsynTask" android:title="AsynTask" android:icon="@drawable/ic_asyntask"> </item>
+    <item android:id="@+id/SQLite" android:title="SQLite" android:icon="@drawable/ic_sqlite"> </item>
+    <item android:id="@+id/REST" android:title="REST API" android:icon="@drawable/ic_rest"> </item>
+    <item android:id="@+id/Facebook" android:title="FaceBook SDK" android:icon="@drawable/ic_facebook"> </item>
+    <item android:id="@+id/map" android:title="Google Map" android:icon="@drawable/ic_maps"> </item>
+    <item android:id="@+id/Service" android:title="Services" android:icon="@drawable/ic_services"> </item>
+    <item android:id="@+id/BroadCast" android:title="Broadcast Receiver" android:icon="@drawable/ic_broadcast"> </item>
+    <item android:id="@+id/content" android:title="Content Provider" android:icon="@drawable/ic_contet"> </item>
+    <item android:id="@+id/complexUI" android:title="Complex UI" android:icon="@drawable/ic_ui"> </item>
+    <item android:id="@+id/Espresso" android:title="Espresso Test" android:icon="@drawable/ic_espresso"> </item>
+    <item android:id="@+id/UintTest" android:title="Unit Test" android:icon="@drawable/ic_unittest"> </item>
+    <item android:id="@+id/Shared" android:title="Shared Performance" android:icon="@drawable/ic_sharedper"> </item>
+    <item android:id="@+id/notify" android:title="Notification" android:icon="@drawable/ic_notifications"> </item>
+
+
+
+</menu>
