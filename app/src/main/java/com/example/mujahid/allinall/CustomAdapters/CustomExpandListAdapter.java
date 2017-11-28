@@ -8,6 +8,7 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.mujahid.allinall.Pogo.GameData;
 import com.example.mujahid.allinall.R;
 
 import java.util.HashMap;
@@ -19,35 +20,33 @@ import java.util.List;
 
 public class CustomExpandListAdapter extends BaseExpandableListAdapter {
     private List<String> header;
-    private HashMap<String, List<String>> child_Items;
     private Context ctx;
-
-    public CustomExpandListAdapter(Context c, List<String> l, HashMap<String,List<String>> m){
+    private List<GameData> list;
+    public CustomExpandListAdapter(Context c, List<GameData> data){
         this.ctx = c;
-        this.header = l;
-        this.child_Items = m;
+        list = data;
     }
 
 
 
     @Override
     public int getGroupCount() {
-        return header.size();
+        return list.size();
     }
 
     @Override
     public int getChildrenCount(int groupPosition) {
-        return child_Items.get(header.get(groupPosition)).size();
+        return list.get(groupPosition).getChildItemSize();
     }
 
     @Override
     public Object getGroup(int i) {
-        return header.get(i);
+        return list.get(i).getHeaderName();
     }
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return child_Items.get(header.get(groupPosition)).get(childPosition);
+        return list.get(groupPosition).getChildItem(childPosition);
     }
 
     @Override
@@ -68,15 +67,16 @@ public class CustomExpandListAdapter extends BaseExpandableListAdapter {
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup viewGroup) {
         String title =(String) this.getGroup(groupPosition);
+
         if(convertView==null){
             LayoutInflater inflater = (LayoutInflater)this.ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             assert inflater != null;
             convertView = inflater.inflate(R.layout.custom_expandlist_parent,null);
 
         }
-        TextView textView = (TextView)convertView.findViewById(R.id.headingItem);
+        TextView textView = convertView.findViewById(R.id.headingItem);
         textView.setText(title);
-        ImageView imageView = (ImageView)convertView.findViewById(R.id.image);
+        ImageView imageView = convertView.findViewById(R.id.image);
         if (isExpanded){
             imageView.setImageResource(R.drawable.ic_collapse);
 
@@ -96,7 +96,7 @@ public class CustomExpandListAdapter extends BaseExpandableListAdapter {
             convertView = inflater.inflate(R.layout.custom_expandlist_child,null);
 
         }
-        TextView textView = (TextView)convertView.findViewById(R.id.childItem);
+        TextView textView = convertView.findViewById(R.id.childItem);
         textView.setText(title);
 
 
