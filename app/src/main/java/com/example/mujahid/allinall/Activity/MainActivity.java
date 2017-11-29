@@ -14,23 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.mujahid.allinall.Navigationmenufrag.AsynTask;
-import com.example.mujahid.allinall.Navigationmenufrag.Broadcast;
-import com.example.mujahid.allinall.Navigationmenufrag.Espresso;
-import com.example.mujahid.allinall.Navigationmenufrag.Facebook;
-import com.example.mujahid.allinall.Navigationmenufrag.Notification;
+import com.example.mujahid.allinall.Navigationmenufrag.*;
 import com.example.mujahid.allinall.Navigationmenufrag.Thread;
-import com.example.mujahid.allinall.Navigationmenufrag.complexui;
-import com.example.mujahid.allinall.Navigationmenufrag.contentprovider;
-import com.example.mujahid.allinall.Navigationmenufrag.expandlist;
-import com.example.mujahid.allinall.Navigationmenufrag.googleMap;
-import com.example.mujahid.allinall.Navigationmenufrag.listview;
-import com.example.mujahid.allinall.Navigationmenufrag.recycleview;
-import com.example.mujahid.allinall.Navigationmenufrag.restapi;
-import com.example.mujahid.allinall.Navigationmenufrag.service;
-import com.example.mujahid.allinall.Navigationmenufrag.sharedperfermence;
-import com.example.mujahid.allinall.Navigationmenufrag.sqlite;
-import com.example.mujahid.allinall.Navigationmenufrag.unitTest;
+import com.example.mujahid.allinall.Navigationmenufrag.ViewPager;
 import com.example.mujahid.allinall.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbars);
         setSupportActionBar(toolbar);
         drawer = (DrawerLayout)findViewById(R.id.layout);
         toggle = new ActionBarDrawerToggle(this,drawer,R.string.open,R.string.close);
@@ -124,10 +110,9 @@ fragment = null;
                       fragment = new unitTest();
                       break;
                   case R.id.Viewpager:
-                      // fragment = new viewpager();
-                Intent intent = new Intent(MainActivity.this, ViewPager.class);
-                      startActivity(intent);
-                    break;
+                fragment = new ViewPager();
+
+                  break;
 
 
               }

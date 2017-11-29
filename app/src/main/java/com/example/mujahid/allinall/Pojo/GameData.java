@@ -8,6 +8,7 @@ public class GameData {
  private String headerName;
  private String[] childItems;
 
+
      public GameData(String n, String[] c){
          headerName = n;
          childItems = c;

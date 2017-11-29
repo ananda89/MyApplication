@@ -12,8 +12,8 @@ import java.util.ArrayList;
 
 public class VIewPagerAdapter extends FragmentPagerAdapter {
 
-    ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
-    ArrayList<String> tabTitles = new ArrayList<>();
+    private ArrayList<Fragment> fragmentArrayList = new ArrayList<>();
+    private ArrayList<String> tabTitles = new ArrayList<>();
 
     public void addFragment(Fragment fragment, String titles){
         fragmentArrayList.add(fragment);
@@ -37,4 +37,5 @@ public class VIewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position){
         return  tabTitles.get(position);
     }
+
 }
