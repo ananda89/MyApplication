@@ -1,4 +1,4 @@
-package com.example.mujahid.allinall.Navigationmenufrag;
+package com.example.mujahid.allinall.Fragment;
 
 
 import android.os.Bundle;

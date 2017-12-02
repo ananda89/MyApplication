@@ -1,4 +1,4 @@
-package com.example.mujahid.allinall.Navigationmenufrag;
+package com.example.mujahid.allinall.Fragment;
 
 
 import android.os.Bundle;
@@ -7,13 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toolbar;
 
-import com.example.mujahid.allinall.Activity.MainActivity;
 import com.example.mujahid.allinall.CustomAdapters.VIewPagerAdapter;
 import com.example.mujahid.allinall.R;
-
-import junit.framework.Assert;
 
 
 /**

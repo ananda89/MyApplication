@@ -1,4 +1,4 @@
-package com.example.mujahid.allinall.Navigationmenufrag;
+package com.example.mujahid.allinall.Fragment;
 
 
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import com.example.mujahid.allinall.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class service extends Fragment {
+public class Broadcast extends Fragment {
 
 
-    public service() {
+    public Broadcast() {
         // Required empty public constructor
     }
 
@@ -25,7 +25,7 @@ public class service extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service, container, false);
+        return inflater.inflate(R.layout.fragment_broadcast, container, false);
     }
 
 }

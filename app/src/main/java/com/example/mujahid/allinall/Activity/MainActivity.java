@@ -1,6 +1,5 @@
 package com.example.mujahid.allinall.Activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.annotation.NonNull;
@@ -14,9 +13,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.mujahid.allinall.Navigationmenufrag.*;
-import com.example.mujahid.allinall.Navigationmenufrag.Thread;
-import com.example.mujahid.allinall.Navigationmenufrag.ViewPager;
+import com.example.mujahid.allinall.Fragment.*;
+import com.example.mujahid.allinall.Fragment.Thread;
+import com.example.mujahid.allinall.Fragment.ViewPager;
 import com.example.mujahid.allinall.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -94,6 +93,7 @@ fragment = null;
                       break;
                   case R.id.Recycle:
                       fragment =  new recycleview();
+                      break;
                   case R.id.REST:
                       fragment = new restapi();
                       break;
