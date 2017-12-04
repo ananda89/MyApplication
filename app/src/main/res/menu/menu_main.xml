@@ -10,6 +10,8 @@
         <item android:id="@+id/ListView" android:title="List View" android:icon="@drawable/ic_listview"> </item>
         <item android:id="@+id/ExLIst" android:title="Expandable List" android:icon="@drawable/ic_expandlist"> </item>
         <item android:id="@+id/Recycle" android:title="Recycle View" android:icon="@drawable/ic_recycle"> </item>
+            <item android:id="@+id/complexUI" android:title="Complex UI" android:icon="@drawable/ic_ui"> </item>
+
         </menu>
     </item>
 
@@ -22,7 +24,7 @@
     <item android:id="@+id/Service" android:title="Services" android:icon="@drawable/ic_services"> </item>
     <item android:id="@+id/BroadCast" android:title="Broadcast Receiver" android:icon="@drawable/ic_broadcast"> </item>
     <item android:id="@+id/content" android:title="Content Provider" android:icon="@drawable/ic_contet"> </item>
-    <item android:id="@+id/complexUI" android:title="Complex UI" android:icon="@drawable/ic_ui"> </item>
+
     <item android:id="@+id/Espresso" android:title="Espresso Test" android:icon="@drawable/ic_espresso"> </item>
     <item android:id="@+id/UintTest" android:title="Unit Test" android:icon="@drawable/ic_unittest"> </item>
     <item android:id="@+id/Shared" android:title="Shared Performance" android:icon="@drawable/ic_sharedper"> </item>

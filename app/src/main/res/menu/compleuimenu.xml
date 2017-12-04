@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <item android:id="@+id/Dash" android:title="Dashboard UI"> </item>
+    <item android:id="@+id/Flex" android:title="Flexiable Toolbar"> </item>
+    <item android:id="@+id/Signup" android:title="Signup"> </item>
+    <item android:id="@+id/Login" android:title="Login"> </item>
+    <item android:id="@+id/welcome" android:title="Welcome Screen"> </item>
+</menu>

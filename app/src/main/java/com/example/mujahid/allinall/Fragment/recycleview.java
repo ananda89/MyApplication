@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.mujahid.allinall.CustomAdapters.RecycleViewAdapter;
 import com.example.mujahid.allinall.Pojo.ProgrammingLangData;
@@ -42,6 +44,7 @@ public class recycleview extends Fragment {
 
         if(getView()!=null){
             recyclerView = (RecyclerView)getView().findViewById(R.id.Recycle);
+
         }
 
         List<ProgrammingLangData> arrayList = new ArrayList<>();
@@ -58,6 +61,7 @@ public class recycleview extends Fragment {
         recyclerView.setAdapter(adapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
 
 
     }

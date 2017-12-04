@@ -2,12 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/fragmentTran"
     tools:context="com.example.mujahid.allinall.Fragment.complexui">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.mujahid.allinall.Fragment.DashboradUI"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ComplexUI" />
+        android:layout_height="match_parent" />
 
 </FrameLayout>
+

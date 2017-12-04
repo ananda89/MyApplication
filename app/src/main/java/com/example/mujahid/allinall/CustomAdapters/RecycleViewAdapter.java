@@ -6,7 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.mujahid.allinall.Pojo.ProgrammingLangData;
 import com.example.mujahid.allinall.R;
@@ -22,9 +24,11 @@ import java.util.List;
 public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.RecycleViewHolder> {
 
     private LayoutInflater intflater;
+    Context context;
     private List<ProgrammingLangData> data = new ArrayList<>();
     public RecycleViewAdapter(Context context, List<ProgrammingLangData> d){
         data = d;
+        this.context = context;
         intflater = LayoutInflater.from(context);
     }
 
@@ -38,10 +42,16 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     @Override
     public void onBindViewHolder( RecycleViewHolder holder, int position) {
-        ProgrammingLangData object = data.get(position);
+        final ProgrammingLangData object = data.get(position);
         holder.title.setText(object.getLangName());
         holder.description.setText(object.getLangDes());
         holder.imageView.setImageResource(object.getLogo());
+        holder.layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context,object.getLangName()+ " Clicked",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
@@ -53,11 +63,13 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         TextView title;
         TextView description;
         ImageView imageView;
+        LinearLayout layout;
         public RecycleViewHolder(View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
             description = itemView.findViewById(R.id.hmmm);
             imageView = itemView.findViewById(R.id.image);
+            layout = itemView.findViewById(R.id.click);
 
         }
     }

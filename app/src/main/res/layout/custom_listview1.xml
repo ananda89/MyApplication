@@ -24,6 +24,7 @@
             android:src="@drawable/customlist_java" />
 
         <LinearLayout
+            android:id="@+id/click"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
             android:layout_marginLeft="85dp"

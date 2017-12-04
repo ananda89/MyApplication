@@ -1,0 +1,213 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mujahid.allinall.Fragment.DashboradUI"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/backgroundcolor"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/banking"
+            android:layout_width="160dp"
+            android:focusable="true"
+            android:layout_height="190dp"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circlebackgroundgreen"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_attach_money_black_24dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Banking"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray"></View>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="190dp"
+            android:id="@+id/finance"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circlebackgroundyellow"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_control_point_black_24dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Finance"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@color/lightgray"></View>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center|top"
+        android:orientation="horizontal"
+
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:id="@+id/light"
+         android:layout_margin="5dp"
+            android:layout_height="190dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shapedeeppurplecircle"
+                    android:src="@drawable/ic_lightbulb_outline_black_24dp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Light"
+                    android:textSize="25dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"
+                    > </View>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_margin="5dp"
+            android:id="@+id/networking"
+            android:layout_height="190dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+
+                >
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shapeaccentcircle"
+                    android:src="@drawable/ic_wifi_black_24dp"
+
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Networking"
+                    android:textSize="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/lightgray"
+                    android:layout_margin="10dp"> </View>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
