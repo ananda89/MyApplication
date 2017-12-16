@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.example.mujahid.allinall.Activity.MainActivity;
 import com.example.mujahid.allinall.R;
 
 
@@ -43,6 +44,7 @@ setHasOptionsMenu(true);
 
         super.onActivityCreated(saved);
         if(getView()!=null){
+
             banking = getView().findViewById(R.id.banking);
             finance = getView().findViewById(R.id.finance);
             light = getView().findViewById(R.id.light);

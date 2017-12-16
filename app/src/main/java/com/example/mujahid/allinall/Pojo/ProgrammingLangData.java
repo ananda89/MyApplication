@@ -15,16 +15,16 @@ public class ProgrammingLangData {
        logo = l;
     }
 
+    public int getLogo(){
+        return logo;
+    }
+
     public String getLangName(){
         return  LangName;
     }
 
     public String getLangDes(){
         return LangDes;
-    }
-
-    public int getLogo(){
-        return logo;
     }
 
 

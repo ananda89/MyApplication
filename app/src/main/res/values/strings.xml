@@ -32,5 +32,6 @@
     </string-array>
     <string name="title_activity_tab__test">Tab_Test</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_collapse_toolbar">collapseToolbar</string>
 
 </resources>

@@ -36,8 +36,8 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
     @Override
     public RecycleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
        View view =  intflater.inflate(R.layout.custom_listview1,parent,false);
-       RecycleViewHolder holder = new RecycleViewHolder(view);
-        return holder;
+
+        return new RecycleViewHolder(view);
     }
 
     @Override
@@ -64,13 +64,14 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         TextView description;
         ImageView imageView;
         LinearLayout layout;
+        View container;
         public RecycleViewHolder(View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
             description = itemView.findViewById(R.id.hmmm);
             imageView = itemView.findViewById(R.id.image);
-            layout = itemView.findViewById(R.id.click);
-
+            layout = itemView.findViewById(R.id.root);
+            container = itemView.findViewById(R.id.root);
         }
     }
 }

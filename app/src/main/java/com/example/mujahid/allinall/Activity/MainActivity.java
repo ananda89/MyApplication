@@ -18,9 +18,12 @@ import com.example.mujahid.allinall.Fragment.Thread;
 import com.example.mujahid.allinall.Fragment.ViewPager;
 import com.example.mujahid.allinall.R;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
        private DrawerLayout drawer;
        private ActionBarDrawerToggle toggle;
+
 
     Fragment fragment;
 

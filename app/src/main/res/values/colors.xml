@@ -10,4 +10,14 @@
     <color name="yellow">#ffb300</color>
     <color name="deeppurple">#7c4dff</color>
     <color name="white">#ffffff</color>
+    <color name="loginactprimarydark">#232831</color>
+    <color name="darkPink">#fe104d</color>
+
+    //color for modern profile UI
+
+    <color name="modernPrimaryDark">#292b3b</color>
+    <color name="moderngraylight">#fafafa</color>
+    <color name="modernstartblue">#09c6df</color>
+    <color name="modernendblue">#0bcce6</color>
+
 </resources>

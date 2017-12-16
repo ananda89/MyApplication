@@ -94,7 +94,6 @@ public class CustomExpandListAdapter extends BaseExpandableListAdapter {
             LayoutInflater inflater = (LayoutInflater)this.ctx.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             assert inflater != null;
             convertView = inflater.inflate(R.layout.custom_expandlist_child,null);
-
         }
         TextView textView = convertView.findViewById(R.id.childItem);
         textView.setText(title);
