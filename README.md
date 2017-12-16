@@ -4,7 +4,13 @@ This a open source project for helping beginners leaning all component of Androi
 Many beginners are facing problems this days to learn Android app developing as google developer Doc have a bit complex documentation as they needs to covers evey tid bits of Android .
 Here I am trying to make this project by developing easy and proficient coding and I will try to cover all the components of Android and some UI component developing,
 So they can read my code and understand those more easily.
+<br>
+<br>
 
+Hint: If you are getting helped by my works and wants to thanks me: <a href='https://ko-fi.com/B0B566IW' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+<br>
+<br>
 Those are the Componets I will cover through this project.
 
 <b>UI Components:</b>
