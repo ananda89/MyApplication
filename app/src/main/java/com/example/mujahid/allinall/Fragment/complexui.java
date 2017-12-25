@@ -14,8 +14,8 @@ import android.view.ViewGroup;
 
 import com.example.mujahid.allinall.Activity.LoginScreen;
 import com.example.mujahid.allinall.Activity.ModernProfileUI;
-import com.example.mujahid.allinall.R;
 import com.example.mujahid.allinall.Activity.collapseToolbar;
+import com.example.mujahid.allinall.R;
 
 import java.util.ArrayList;
 
@@ -60,7 +60,7 @@ Fragment fragment;
                 return true;
             case R.id.Flex:
 
-                Intent intent = new Intent(getActivity(), collapseToolbar.class);
+                Intent intent = new Intent(getActivity(), collapseToolbar.class );
                 startActivity(intent);
                 return true;
 

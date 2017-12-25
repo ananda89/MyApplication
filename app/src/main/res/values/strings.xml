@@ -30,6 +30,13 @@
         <item>Withcher 2</item>
         <item>Tomb Raider</item>
     </string-array>
+
+    <string-array name="image">
+        <item>http://www.robots.nu/assets/Uploads/_resampled/croppedimage655487-Robot-als-project.jpg</item>
+        <item>https://ozrobotics.com/wp-content/uploads/2017/06/Your-Own-Personal-Minion.png</item>
+        <item>https://images-na.ssl-images-amazon.com/images/I/41PE3fiDw%2BL._SL500_AC_SS350_.jpg</item>
+        <item>https://images-na.ssl-images-amazon.com/images/I/51qiaFrvq7L._SL500_AC_SS350_.jpg</item>
+    </string-array>
     <string name="title_activity_tab__test">Tab_Test</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_collapse_toolbar">collapseToolbar</string>
