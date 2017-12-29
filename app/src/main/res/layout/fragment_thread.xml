@@ -30,8 +30,8 @@
             android:layout_height="wrap_content"
             android:text="Download"
             android:id="@+id/downbutton"
-
             />
+
     </LinearLayout>
     <LinearLayout
         android:visibility="gone"

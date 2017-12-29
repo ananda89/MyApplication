@@ -35,6 +35,7 @@
             android:name=".Activity.ModernProfileUI"
             android:parentActivityName=".Activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Database.Activity.Student_Data_Insert"></activity>
     </application>
 
 </manifest>

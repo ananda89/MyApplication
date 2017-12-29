@@ -24,6 +24,7 @@ public class listview extends Fragment {
 
 
     public listview() {
+
         setHasOptionsMenu(true);
     }
 
