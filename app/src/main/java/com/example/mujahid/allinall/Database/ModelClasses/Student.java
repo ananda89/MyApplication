@@ -11,15 +11,15 @@ public class Student {
     private String Mother_name;
     private String Birth_date;
     private String subject;
-    private String Roll_Number;
 
-    public Student(String student_name, String father_name, String mother_name, String birth_date, String Subject, String roll_Number) {
+
+    public Student(String student_name, String father_name, String mother_name, String birth_date, String Subject) {
         Student_name = student_name;
         Father_name = father_name;
         Mother_name = mother_name;
         Birth_date = birth_date;
         this.subject = Subject;
-        Roll_Number = roll_Number;
+
     }
 
     public String getStudent_name() {
@@ -42,7 +42,5 @@ public class Student {
         return subject;
     }
 
-    public String getRoll_Number() {
-        return Roll_Number;
-    }
+
 }

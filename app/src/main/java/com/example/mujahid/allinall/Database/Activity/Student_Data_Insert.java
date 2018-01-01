@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import com.example.mujahid.allinall.Activity.L;
 import com.example.mujahid.allinall.Database.HelperClasses.DatabaseOperation;
-import com.example.mujahid.allinall.Database.ModelClasses.Commerce;
+
 import com.example.mujahid.allinall.Database.SubjectFragment.Arts_Subjects;
 import com.example.mujahid.allinall.Database.SubjectFragment.Commerce_Subjects;
 import com.example.mujahid.allinall.Database.SubjectFragment.Science_Subjects;
@@ -155,6 +155,10 @@ public class Student_Data_Insert extends AppCompatActivity {
             ok = true;
         }
         return ok;
+    }
+
+    public void onEdit(View view) {
+        //Need to works
     }
 
     class onBackgroundSave implements Runnable {

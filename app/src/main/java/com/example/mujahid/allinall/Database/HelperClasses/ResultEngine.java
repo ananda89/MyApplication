@@ -53,10 +53,21 @@ public class ResultEngine {
         return counter;
     }
 
-    public double getPoint(Context c, String Roll){
-        Cursor cursor;
+    public double getPoint(Context c, String Roll, String subject){
+        Cursor cursor = null;
         DatabaseOperation a = new DatabaseOperation();
-        cursor = a.getMark(c,Roll);
+        switch (subject) {
+            case "Science":
+                cursor = a.getScienceMark(c, Roll);
+                break;
+            case "Commerce":
+                cursor = a.getCommerceMark(c, Roll);
+                break;
+            case "Humanities":
+                cursor = a.getArtsMark(c, Roll);
+                break;
+        }
+
         if(cursor!=null){
             cursor.moveToFirst();
 

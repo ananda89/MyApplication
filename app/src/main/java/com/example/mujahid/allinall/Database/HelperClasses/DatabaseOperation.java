@@ -121,7 +121,7 @@ public class DatabaseOperation {
     }
 
 
-    public Cursor getMark(Context contex, String roll){
+    public Cursor getScienceMark(Context contex, String roll){
         Cursor a = null;
         try {
             SQLiteOpenHelper openHelper = new ResultSystemDatabaseHelper(contex);
@@ -134,4 +134,47 @@ public class DatabaseOperation {
         }
         return a;
     }
+
+    public Cursor getCommerceMark(Context contex, String roll){
+        Cursor a = null;
+        try {
+            SQLiteOpenHelper openHelper = new ResultSystemDatabaseHelper(contex);
+            SQLiteDatabase database = openHelper.getWritableDatabase();
+            String sql = "SELECT Business_Study, Entireprenueship, Bangla, English, Accounting, IslamicEDu  FROM Commerce WHERE Roll_Number = " + roll + " ;";
+            a = database.rawQuery(sql, null);
+        }
+        catch (SQLiteException e){
+            Log.d("Mim",e.getMessage());
+        }
+        return a;
+    }
+
+    public Cursor getArtsMark(Context contex, String roll){
+        Cursor a = null;
+        try {
+            SQLiteOpenHelper openHelper = new ResultSystemDatabaseHelper(contex);
+            SQLiteDatabase database = openHelper.getWritableDatabase();
+            String sql = "SELECT History, Economics, Bangla, English, Math, IslamicEDu  FROM Humanities WHERE Roll_Number = " + roll + " ;";
+            a = database.rawQuery(sql, null);
+        }
+        catch (SQLiteException e){
+            Log.d("Mim",e.getMessage());
+        }
+        return a;
+    }
+
+    public Cursor getStudentInfo(Context context, String roll){
+        Cursor a = null;
+        try {
+            SQLiteOpenHelper openHelper = new ResultSystemDatabaseHelper(context);
+            SQLiteDatabase database = openHelper.getWritableDatabase();
+            String sql = "SELECT Student_name, Father_name, Mother_name, Birth_Date, Subject FROM Student WHERE Roll_Number = " + roll + " ;";
+            a = database.rawQuery(sql, null);
+        }
+        catch (SQLiteException e){
+            Log.d("Mim",e.getMessage());
+        }
+        return a;
+    }
+
 }
