@@ -27,8 +27,9 @@ public class Arts_Subjects extends Fragment {
     EditText bangla;
     EditText english;
     EditText islam;
+
     public Arts_Subjects() {
-        // Required empty public constructor
+
     }
 
 
@@ -38,10 +39,9 @@ public class Arts_Subjects extends Fragment {
         GlobalBus.getBus().register(this);
         return inflater.inflate(R.layout.fragment_arts__subjects, container, false);
     }
+
     public void onActivityCreated(Bundle bundle) {
-
         super.onActivityCreated(bundle);
-
         if (getView() != null) {
             histroy = getView().findViewById(R.id.history);
             math = getView().findViewById(R.id.math);
@@ -63,7 +63,6 @@ public class Arts_Subjects extends Fragment {
 
     @Subscribe
     public void getMessage(Event.ActivityFragmentMessage activityFragmentMessage) {
-
         Toast.makeText(getActivity(),activityFragmentMessage.getMessage(),Toast.LENGTH_LONG).show();
     }
 
@@ -73,12 +72,8 @@ public class Arts_Subjects extends Fragment {
 
     public void sendDatToActivity(String history, String echonomics, String math, String ban, String eng, String is){
         String[] array = {history,echonomics,math,ban,eng,is};
-
         Event.ArtFragmentActivityMessage fragmentActivityMessage  =
                 new Event.ArtFragmentActivityMessage(array);
-
-
         GlobalBus.getBus().post(fragmentActivityMessage);
-
     }
 }

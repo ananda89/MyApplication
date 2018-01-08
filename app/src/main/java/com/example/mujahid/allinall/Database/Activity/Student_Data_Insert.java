@@ -83,12 +83,10 @@ public class Student_Data_Insert extends AppCompatActivity {
     }
 
     private void onFragmentTran(){
-
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frameLayout,fragment);
         transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         transaction.commit();
-
     }
 
     @Override
@@ -99,18 +97,16 @@ public class Student_Data_Insert extends AppCompatActivity {
     }
 
     void onScienceDatacall(){
-
         Science_Subjects data= (Science_Subjects) getSupportFragmentManager().findFragmentById(R.id.frameLayout);
         data.mainCall();
     }
-    void onCommerceDatacall(){
 
+    void onCommerceDatacall(){
         Commerce_Subjects data= (Commerce_Subjects) getSupportFragmentManager().findFragmentById(R.id.frameLayout);
         data.mainCall();
     }
 
     void onArtsDatacall(){
-
         Arts_Subjects data= (Arts_Subjects) getSupportFragmentManager().findFragmentById(R.id.frameLayout);
         data.mainCall();
     }
@@ -123,23 +119,17 @@ public class Student_Data_Insert extends AppCompatActivity {
 
     @Subscribe
     public void SciencegetMessage(Event.ScienceFragmentActivityMessage fragmentActivityMessage) {
-
         ScienceRecever =  fragmentActivityMessage.getMessage();
-
     }
 
     @Subscribe
     public void CommercegetMessage(Event.CommerceFragmentActivityMessage fragmentActivityMessage) {
-
         CommerceRecever =  fragmentActivityMessage.getMessage();
-
     }
 
     @Subscribe
     public void ArtsgetMessage(Event.ArtFragmentActivityMessage fragmentActivityMessage) {
-
         ArtRecever =  fragmentActivityMessage.getMessage();
-
     }
 
     public void onSave(View view) {
@@ -164,6 +154,7 @@ public class Student_Data_Insert extends AppCompatActivity {
     class onBackgroundSave implements Runnable {
 
         DatabaseOperation a = new DatabaseOperation();
+
         boolean isSucessScienceSave;
         boolean isSucessStudentSave;
         boolean isSucessCommerceSave;
@@ -173,37 +164,29 @@ public class Student_Data_Insert extends AppCompatActivity {
         public void run() {
             try {
                 if (Validation()) {
-
                     isSucessStudentSave = a.insertIntoStudent(getApplicationContext(), stu_name.getText().toString(), Father_name.getText().toString(), Mother_name.getText().toString(), Roll_number.getText().toString(), spinner.getSelectedItem().toString(), Birth_Date.getText().toString());
-
                     if (spinner.getSelectedItem().toString().equals("Science")) {
                         onScienceDatacall();
                         isSucessScienceSave = a.insertIntoScience(getApplicationContext(), Roll_number.getText().toString(), Integer.parseInt(ScienceRecever[0]), Integer.parseInt(ScienceRecever[1]), Integer.parseInt(ScienceRecever[2]), Integer.parseInt(ScienceRecever[4]), Integer.parseInt(ScienceRecever[3]), Integer.parseInt(ScienceRecever[5]));
                         if (isSucessStudentSave && isSucessScienceSave) {
-                            runOnUiThread(new Runnable() {
+                            runOnUiThread(new Runnable(){
                                 @Override
                                 public void run() {
                                     Toast.makeText(getApplicationContext(), "Data Saved Sucessfully!", Toast.LENGTH_LONG).show();
                                 }
                             });
-
                         } else {
-
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     Toast.makeText(getApplicationContext(), "Data not Saved Sucessfully!", Toast.LENGTH_LONG).show();
                                 }
                             });
-
                         }
 
                     } else if (spinner.getSelectedItem().toString().equals("Commerce")) {
-
                         onCommerceDatacall();
-
                         isSucessCommerceSave = a.insertIntoCommerce(getApplicationContext(), Roll_number.getText().toString(), Integer.parseInt(CommerceRecever[1]), Integer.parseInt(CommerceRecever[0]), Integer.parseInt(CommerceRecever[2]), Integer.parseInt(CommerceRecever[3]), Integer.parseInt(CommerceRecever[4]), Integer.parseInt(CommerceRecever[5]));
-
                         if (isSucessStudentSave && isSucessCommerceSave) {
                             runOnUiThread(new Runnable() {
                                 @Override

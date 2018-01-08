@@ -38,7 +38,6 @@ ArrayList<ProgrammingLangData> mainlist;
             LayoutInflater vi = (LayoutInflater)getContext().getSystemService(inflater);
             assert vi != null;
             convertView = vi.inflate(res,langView);
-
         }
 
         TextView title = (TextView)convertView.findViewById(R.id.title);

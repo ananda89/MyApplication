@@ -35,17 +35,13 @@ public class Science_Subjects extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         GlobalBus.getBus().register(this);
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_science__subjects, container, false);
     }
 
     public void onActivityCreated(Bundle bundle) {
-
         super.onActivityCreated(bundle);
         if (getView() != null) {
-
             physics = getView().findViewById(R.id.physics);
             chemistry = getView().findViewById(R.id.chmistry);
             biology = getView().findViewById(R.id.biology);
@@ -79,8 +75,6 @@ public class Science_Subjects extends Fragment {
 
         Event.ScienceFragmentActivityMessage fragmentActivityMessage  =
                 new Event.ScienceFragmentActivityMessage(array);
-
-
         GlobalBus.getBus().post(fragmentActivityMessage);
 
     }
